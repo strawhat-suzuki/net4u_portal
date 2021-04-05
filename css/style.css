@@ -1,0 +1,189 @@
+@charset "utf-8";
+/* ========================
+■style.css
+サイトのスタイルを設定するためのCSSファイルです。
+======================== */
+
+/* ========================
+■サイト全体
+======================== */
+body {
+    color: #333;
+    font-size: 16px;
+    font-family: "源ノ角ゴシック", "源ノ角ゴシック Regular", Noto Sans JP, "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", Hiragino Kaku Gothic Pro, "ＭＳ Ｐゴシック", sans-serif;
+    letter-spacing: .1em;
+}
+
+
+/* ========================
+■ヘッダー部分
+======================== */
+.header-bg {
+    background: #ddd url(../img/bg.jpg) no-repeat center left;
+    background-size: cover;
+}
+
+.header {
+    padding: 3rem 1rem 1rem 1rem;
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+header h2 {
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 100;
+    line-height: 1.7;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 1.0), 0px 0px 4px rgba(0, 0, 0, 1.0);
+}
+
+header h3 {
+    margin: 30px 0;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ========================
+■メイン部分
+======================== */
+main {
+    background-color: #f5f5f5;
+}
+
+
+main img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ========================
+■メイン01部分
+======================== */
+
+.main_01 {
+    padding: 1rem 1rem 3rem 1rem;
+}
+
+.main_01 h4 {
+    margin: 0;
+}
+
+.main_01 h5 {
+    font-weight: bold;
+    margin: 0 0 1rem 0;
+}
+
+.cont_03 h5 {
+    margin: 0 0 1rem 0;
+}
+
+.cont_carousel img {
+    border: 10px #FFF solid;
+}
+
+.cont_03 p {
+    margin-bottom: 2rem;
+}
+
+.main_01 hr {
+    margin: 5rem 0;
+}
+
+/* カルーセル部分 */
+.carousel-indicators {
+    position: static;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.carousel-indicators li {
+    text-indent: 0;
+    width: auto;
+    height: auto;
+}
+
+.carousel-indicators img {
+    border: 3px #bebebe solid;
+}
+
+.carousel-indicators .active img {
+    border: 3px #4983d9 solid;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 10%;
+    bottom: -30px;
+    opacity: 1.0;
+}
+
+/* ========================
+■メイン02部分
+======================== */
+
+.bgc_white {
+    background-color: #FFF;
+}
+
+.main_02 {
+    padding: 5rem 1rem;
+}
+
+.main_02 h5 {
+    font-weight: bold;
+    margin: 0;
+}
+
+.main_02 form {
+    border: #f5f5f5 5px solid;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+.col-form-label {
+    font-weight: 800;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.cont_tel {
+    border: #f5f5f5 5px solid;
+    padding: 2rem;
+}
+
+/* ========================
+■フッター部分
+======================== */
+footer {
+    color: #fff;
+    background-color: #1C3354;
+}
+
+footer img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer a {
+    color: #17a2b8;
+}
+
+.footer {
+    padding: 2rem 1rem;
+}
+
+.contact {
+    margin-top: 1rem;
+    padding-left: 2rem;
+    border-left: 1px #fff solid;
+}
