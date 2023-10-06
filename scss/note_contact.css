@@ -56,7 +56,7 @@ Header .Header__inner {
 ** main
 --------------------------- */
 main {
-  /*margin-top: 80px;*/
+  margin-top: 14px;
   /* ヘッダーの重なり回避 */
 }
 @media (min-width: 769) {
@@ -96,6 +96,13 @@ main .cont_04 {
   max-width: 20%;
 }
 
+@media (min-width: 768px) {
+  .col-md-10 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
 .btn-primary {
   color: #fff;
   background-color: #52a44f;
