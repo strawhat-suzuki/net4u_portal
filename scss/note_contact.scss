@@ -56,9 +56,11 @@ Header {
 --------------------------- */
 main {
   /*margin-top: 80px;*/ /* ヘッダーの重なり回避 */
-   .container {
-    margin: 20px auto;
-    max-width: 877px;
+  @media (min-width: 769){
+     .container {
+      margin: 20px auto;
+      max-width: 877px;
+    }
   }
   .bgc_white {
     background-color: #FFFFFF;
@@ -67,10 +69,7 @@ main {
     padding: 30px;
   }
 }
-h1, h2, h3, h4, h5, h6 {
-  font-size: inherit;
-  font-weight: inherit;
-}
+
 .PageTitle {
     color: #1f1f1f;
     font-size: 24px;
@@ -80,10 +79,6 @@ h1, h2, h3, h4, h5, h6 {
 		font-size: 28px;
 		margin-bottom: 16px;
 	}
-}
-
-.container {
-  
 }
 
 /* --------------------------

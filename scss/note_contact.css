@@ -59,20 +59,17 @@ main {
   /*margin-top: 80px;*/
   /* ヘッダーの重なり回避 */
 }
-main .container {
-  margin: 20px auto;
-  max-width: 877px;
+@media (min-width: 769) {
+  main .container {
+    margin: 20px auto;
+    max-width: 877px;
+  }
 }
 main .bgc_white {
   background-color: #FFFFFF;
 }
 main .cont_04 {
   padding: 30px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: inherit;
-  font-weight: inherit;
 }
 
 .PageTitle {
