@@ -3,7 +3,7 @@
 ** HTML
 --------------------------- */
 body, html {
-  background-color: #eee;
+  background-color: #f5f5f5;
   font-family: "Yu Gothic Medium","Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
   line-height: inherit;
   margin: 0;
@@ -71,11 +71,16 @@ main .bgc_white {
 main .cont_04 {
   padding: 30px;
 }
+@media (min-width: 769px) {
+  main .cont_04 {
+    padding: 50px;
+  }
+}
 
 .PageTitle {
   color: #1f1f1f;
   font-size: 24px;
-  margin-bottom: 4.2666666667vw;
+  text-align: center;
 }
 @media (min-width: 769px) {
   .PageTitle {
