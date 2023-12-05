@@ -5,18 +5,7 @@
 	<title>福井次世代型生殖医療支援情報連携ネットワーク 情報共有同意登録フォーム</title>
   
   <!-- Script Postal-Code for Address -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.jpostal/1.3.2/jquery.jpostal.js"></script>
-  <script>
-    $(function() {
-      $('#postal_code').jpostal({
-        postcode: ['#postal_code'],
-        address: {
-          '#address': '%3%4%5'
-        }
-      });
-    });
-  </script>
+  <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
   
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -94,13 +83,13 @@
             <div class="form-group row">
               <label class="col-4 col-form-label" for="postal_code">郵便番号</label>
               <div class="col-3">
-                <input type="text" id="postal_code" name="postal_code"  class="form-control">
+                <input type="text" id="postal_code" name="zip11"  class="form-control"  onKeyUp="AjaxZip3.zip2addr(this,'','addr11','addr11');">
               </div>
             </div>
             <div class="form-group row">
               <label class="col-4 col-form-label" for="address" >住所</label>
               <div class="col-8">
-                <input type="text" id="address" name="address" class="form-control">
+                <input type="text" id="address" name="addr11" class="form-control">
               </div>
             </div>
             
