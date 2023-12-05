@@ -1,0 +1,98 @@
+// Scss Document
+
+/* --------------------------
+** HTML
+--------------------------- */
+body, html {
+  background-color: #eee;
+  font-family: "Yu Gothic Medium","Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+  line-height: inherit;
+  margin: 0;
+}
+audio, canvas, embed, iframe, img, object, svg, video {
+    display: block;
+    vertical-align: middle;
+}
+img, video {
+    height: auto;
+    max-width: 100%;
+}
+/* --------------------------
+** Header
+--------------------------- */
+Header {
+  position: sticky; /* ヘッダーの重なり回避 */
+  top: 0;
+  z-index: 200;
+  width: 100%;
+  background-color: #55a152;
+  display: block;
+
+  @media print {
+    display: none;
+  }
+
+  .Header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.Header__left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: calc(50% - 720px);
+
+  img {
+    margin: 9px 0 9px 30px;
+  }
+
+}
+
+/* --------------------------
+** main
+--------------------------- */
+main {
+  margin-top: 14px; /* ヘッダーの重なり回避 */
+/*  @media (min-width: 769px){ */
+     .container {
+      margin: 20px auto;
+      max-width: 840px;
+    }
+/*  } */
+  .bgc_white {
+    background-color: #FFFFFF;
+    
+  }
+  .cont_04 {
+    padding: 30px;
+  }
+}
+
+.PageTitle {
+    color: #1f1f1f;
+    font-size: 24px;
+    margin-bottom: 4.2666666667vw;
+
+	@media (min-width: 769px){
+		font-size: 28px;
+		margin-bottom: 16px;
+	}
+}
+
+/* --------------------------
+** form
+--------------------------- */
+.col-form-label {
+  white-space: nowrap;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #52a44f;
+  border-color: #52a44f;
+  display: block;
+  margin: 0 auto;
+}

@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+	<title>福井次世代型生殖医療支援情報連携ネットワーク 情報共有同意登録フォーム</title>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<!-- Site Style CSS -->
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="scss/fukui.css" rel="stylesheet" type="text/css">
+  
+  <!-- favicon -->
+  <link href="/img/favicon_note.ico" rel="icon" type="image/x-icon" />
+  
+  <!-- Script Postal-Code for Address -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.jpostal/1.3.2/jquery.jpostal.js"></script>
+  <script>
+    $(function() {
+      $('#postal_code').jpostal({
+        postcode: ['#postal_code'],
+        address: {
+          '#address': '%3%4%5'
+        }
+      });
+    });
+  </script>
+</head>
+
+<body>
+	<header>
+		<div class="Header__inner">
+			<div class="Header__left">
+        <img src="img/note_logo.png" width="230" height="46" alt="ネットフォーユーノートのロゴ"/>
+      </div>
+		</div>
+	</header>
+  <main>
+	  <!-- メイン02 -->
+	  <div class="container">
+      <h1 class="PageTitle">福井次世代型生殖医療支援情報連携ネットワーク<br>情報共有同意登録フォーム</h1>
+	    <div class="bgc_white">
+	      <div class="cont_04">
+	        
+	        <p class="preface">Fukui ART Net　宛<br><br>
+　私は、福井次世代型生殖医療支援情報連携ネットワークに関する説明を受け、その目的及び
+利用方法などを理解しましたので、私の高度生殖医療情報（個人情報を含む）をかかりつけ医
+と福井大学病院高度生殖医療センターで共有することに同意します。<br>
+<br>
+※本フォームで登録する個人情報は、データの暗号化によって安全にサーバーに送信されます。
+登録情報は福井次世代型生殖医療支援情報連携ネットワークの利用開始登録にのみ利用します。<br><br>
+</p>
+	        <form name="note_contact" method="POST" data-netlify="true">
+            <input type="hidden" name="subject" value="【福井生殖医療支援】登録フォーム" />
+	          <div class="form-group row">
+	            <label class="col-4 col-form-label" for="">申込年月日</label>
+	            <div class="col-4">
+	              <input type="date" class="form-control" name="date">
+              </div>
+            </div>
+
+            <div class="form-group row">
+	            <label class="col-4 col-form-label" for="">お名前（漢字）</label>
+	            <div class="col-5">
+	              <input type="text" class="form-control" name="name-kanji" aria-describedby="" placeholder="お名前（漢字）">
+              </div>
+            </div>
+              <div class="form-group row">
+	            <label class="col-4 col-form-label" for="">お名前（ふりがな）</label>
+	            <div class="col-5">
+	              <input type="text" class="form-control" name="name-kana" aria-describedby="" placeholder="お名前（ふりがな）">
+              </div>
+            </div>
+            
+	          <div class="form-group row">
+	            <label class="col-4 col-form-label" for="">性別</label>
+	            <div class="col-3">
+	              <div class="form-check pl-4">
+	                <input class="form-check-input" type="radio" name="sex" value="女" checked>
+	                <label class="form-check-label mr-4" for="">女</label>
+	                <input class="form-check-input" type="radio" name="sex" value="男">
+	                <label class="form-check-label" for="">男</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-4 col-form-label" for="postal_code">郵便番号</label>
+              <div class="col-3">
+                <input type="text" id="postal_code" name="postal_code"  class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-4 col-form-label" for="address" >住所</label>
+              <div class="col-8">
+                <input type="text" id="address" name="address" class="form-control">
+              </div>
+            </div>
+            
+            <div class="form-group row">
+	            <label class="col-4 col-form-label" for="">連絡先（電話番号）</label>
+	            <div class="col-4">
+	              <input type="tel" class="form-control" name="tel">
+              </div>
+            </div>
+
+            <div class="form-group row">
+	            <label class="col-4 col-form-label" for="">生年月日</label>
+	            <div class="col-4">
+	              <input type="date" class="form-control" name="birth-date">
+              </div>
+            </div>
+
+            <div class="form-group row">
+	            <label class="col-5 col-form-label" for="">専門的治療を行う医療機関</label>
+	            <div class="col-6">
+	              <select class="form-control" name="hosp">
+                  <option value="A病院">A病院</option>
+                  <option value="B病院">B病院</option>
+                  <option value="C病院">C病院</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-group row">
+	            <label class="col-5 col-form-label" for="">かかりつけの医療機関</label>
+	            <div class="col-6">
+	              <select class="form-control" name="hosp">
+                  <option value="A病院">A病院</option>
+                  <option value="B病院">B病院</option>
+                  <option value="C病院">C病院</option>
+                </select>
+              </div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary mt-5">お申し込み</button>
+          </form>
+	       
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
