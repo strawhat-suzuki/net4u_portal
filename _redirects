@@ -1,3 +1,3 @@
 # Redirects from what the browser requests to what we serve
-/fukui_approval.html    /https://www2.net-4u.org/fukui_approval_confirm/
-/fukui_withdrawal.html  /https://www2.net-4u.org/fukui_withdrawal/
+/fukui_approval.html    https://www2.net-4u.org/fukui_approval_confirm
+/fukui_withdrawal.html  https://www2.net-4u.org/fukui_withdrawal
