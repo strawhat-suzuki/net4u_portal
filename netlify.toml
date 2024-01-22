@@ -1,6 +1,5 @@
 [[redirects]]
-  from = "fukui_approval.html"
+  from = "https://www.net-4u.org/fukui_approval.html"
   to = "https://www2.net-4u.org/fukui_approval"
   status = 301
   force = true
-  headers = {X-From = "Netlify"}
